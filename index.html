@@ -5,7 +5,10 @@
   "use strict";
   import { getTokenFromOtherOrigin } from "./crossOriginUtils.js";
 
-  const otherPage = "https://rupertbenwiser.github.io/wei-wpt-other";
+  // Hardcoded to a separate domain that will respond with a WEI token.
+  // The repository for this page can be found here:
+  // https://github.com/RupertBenWiser/wei-wpt-other
+  const otherPage = "http://benwiser.com/wei-wpt-other.html";
 
   // TODO(bewise): We should have a test looking at the actual CBOR token contents when we
   // get a response from Android.
