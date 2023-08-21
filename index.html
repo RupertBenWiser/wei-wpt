@@ -27,7 +27,7 @@
     const selfToken = await navigator.getEnvironmentIntegrity("first binding");
     const otherToken = await navigator.getEnvironmentIntegrity("different binding");
 
-    assert_not_equals(selfToken.encode(), otherToken);
+    assert_not_equals(selfToken.encode(), otherToken.encode());
   }, "getEnvironmentIntegrity should return different token for same origin with different content bindings");
 
   promise_test(async () => {
